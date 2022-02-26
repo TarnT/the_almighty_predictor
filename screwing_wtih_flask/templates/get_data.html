@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<form method="POST">
+    <label>Age: </label>
+    <div>
+        <input type="text" name="age" placeholder="Age">
+    </div>
+    <br>
+    <label>Gender: </label>
+        <div>
+            <input type="radio" name="gender" value="male">
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" value="human">
+            <label for="other">Other</label>
+        </div>
+
+        <br>
+
+        <label>Marital Status: </label>
+        <br>
+    
+        <input type="radio" name="marital" value="Never-married">
+        <label for="Never-married">Never married</label><br>
+        <input type="radio" name="marital" value="Divorced">
+        <label for="Divorced">Divorced</label><br>
+        <input type="radio" name="marital" value="Separated">
+        <label for="Separated">Separated</label><br>
+        <input type="radio" name="marital" value="Widowed">
+        <label for="Widowed">Widowed</label><br>
+        <input type="radio" name="marital" value="Married-spouse-absent">
+        <label for="Married-spouse-absent">Married, spouse absent</label><br>
+        <input type="radio" name="marital" value="Married-AF-spouse">
+        <label for="Married-AF-spouse">Married, armed forces spouse</label>
+        <br>
+
+    <input type="submit">
+</form>
+
+
+{% endblock %}

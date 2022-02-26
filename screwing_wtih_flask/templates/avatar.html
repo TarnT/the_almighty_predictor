@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <form action="/avatar" method="post">
+        <label>Gender: </label>
+        <div>
+            <input type="radio" name="gender" value="male">
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" value="human">
+            <label for="other">Other</label>
+        </div>
+        <input type="submit">
+    </form>
+        
+
+{% endblock %}
