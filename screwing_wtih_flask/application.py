@@ -20,7 +20,7 @@ def get_data():
 
          # get predicted income
 
-        return render_template("predicted.html", avatar_url=avatar_url, income="above 50000", marital=marital, age=age, gender=gender)
+        return render_template("predicted.html", avatar_url=avatar_url, income=random.choice(["Above 50,000", "Below 50,000"]), marital=marital, age=age, gender=gender)
 
     
     else:
